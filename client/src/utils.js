@@ -21,6 +21,7 @@ const getContract = async (web3) => {
   const data = await $.getJSON("./contracts/Greeter.json");
   const contract = new web3.eth.Contract(
     data.abi,
+    // This is the contract address after you have deployed the Greeter contract to Hardhat
     "0x5FbDB2315678afecb367f032d93F642f64180aa3"
   );
 
